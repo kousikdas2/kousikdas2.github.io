@@ -236,6 +236,7 @@ p{
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	transition: 0.7s;
 }
 
 
@@ -245,6 +246,7 @@ p{
 .view-more:hover{
     transform: scale(1.05);
     box-shadow: 5px 0px 10px #054c83;
+	
     color: #0066b2;
     background-color: #f3fcff;
 	margin: 0;
@@ -463,21 +465,23 @@ figure.effect-oscar:hover img {
 	width: 100%;
 	left: 50%;
   	margin-left: -148px;
-	margin-top: -50px;
+	margin-top: -55px;
 	background-color: #f3fcff;
 	position: absolute;
 	border-radius: 15px;
 	z-index: 1;
+	transition: 0.7s;
 }
 
 .review:hover .details{
 	visibility: visible;
-	transition-delay: .32s;
+	/* transition: 0.70s; */
+	transition-delay: 0.40s;
 }
 
 .review:hover .short{
 	visibility: hidden;
-	transition-delay: .32s;
+	transition-delay: .40s;
 }
 
 .details p{
