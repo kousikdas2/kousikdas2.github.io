@@ -1,0 +1,177 @@
+body{
+    font-family: Roboto;
+}
+
+/* landing page about us */
+.container1{
+    display: flex;
+    height: auto;
+    border-radius: 15px;
+    margin: 0 40px;
+    background: linear-gradient(268.45deg, #4C8ED3 19.42%, #59C6E8 83.28%);;
+}
+
+.container-video{
+    width: 50%;
+}
+
+.container-text{
+    flex-grow: 1;
+    color: #FFFFFF;
+    padding: 20px 0 60px;
+}
+
+.text1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    /* text-align: center; */
+    letter-spacing: 0.02em;
+    padding-left: 20px;
+}
+
+.text2, .text4, .text5{
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.022em;
+}
+
+.text3{
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 60px;
+    
+}
+.text3 p{
+    font-size: 16px;
+}
+
+.text3 ol{
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+    padding-left: 15px;
+}
+
+
+/* 2nd slide */
+
+.container2{
+    background: rgba(89, 198, 232, 0.1);
+    border-radius: 15px;
+    height: auto;
+    margin: 50px 40px 0;
+    font-family: Quicksand;
+    font-weight: bold;
+    padding: 57px 0 0 100px;
+}
+
+.container2 h2{
+    color: #082857;
+    padding-bottom: 20px;
+    
+}
+
+
+.clinic{
+    display: flex;
+}
+
+.clinic-text{
+    width: 100%;
+}
+
+.clinic-img{
+    flex-grow: 1;
+}
+
+.clinic-text h3{
+    color: #0066B2;
+}
+
+.clinic-text p{
+    color: #5B1EBA;
+    padding-bottom: 20px;
+}
+
+.clinic-img{
+    margin: auto 0;
+}
+
+/* faq section start */
+.container3{
+    background: linear-gradient(268.45deg, #4C8ED3 19.42%, #59C6E8 83.28%);
+    border-radius: 15px;
+    margin: 0 40px;
+    padding-bottom: 40px;
+}
+
+.container3 h2{
+    color: #FFFFFF;
+    text-align: center;
+    padding: 57px 0 0;
+}
+
+.row2{
+	padding: 30px 30px 20px;
+	display: flex;
+	position: relative;
+}
+
+.faq{
+	background: rgba(247, 248, 243, 0.69);
+	width: 33.33%;
+	padding: 18px;
+	margin: 0 40px;
+	text-align: center;
+	border-radius: 15px;
+	/* box-shadow: 5px 5px 5px 1px #bfe0eb; */
+	position: relative;
+}
+
+.question p{
+    font-weight: bold;
+}
+
+.answer p{
+    font-size: 13px;
+    padding: 0 30px 10px;
+	text-align: center;
+	margin: 0 0 8px;
+}
+
+/* sow answer of faq on hover */
+.faq{
+    position: relative;
+    display: inline-block;
+}
+
+.faq:hover{
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.faq .answer{
+    visibility: hidden;
+    width: 100%;
+    left: 50%;
+    margin-left: -159px;
+	/* margin-top: -10px; */
+    background: #F7F8F3;
+    position: absolute;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.faq:hover .answer{
+    visibility: visible;
+    transition-delay: .22s;
+    background: #FFFFFF;
+}
+
+
+

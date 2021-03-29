@@ -1,0 +1,413 @@
+body{
+    font-family: "Roboto";
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+
+/* Div for service section */
+.services{
+    background: linear-gradient(109.16deg, #399CD5 27.97%, #B6DDF1 179.76%, #F3FCFF 179.78%, #F3FCFF 179.78%, #F3FCFF 179.78%);
+    height: auto;
+    /* padding-bottom: 100px; */
+    margin: 0 30px;
+    border-radius: 5px;
+    box-shadow: -5px 4px 5px lightgray,
+    5px 8px 5px lightgray;
+}
+
+
+/* Services heading */
+.main-heading{
+    font-size: 30px;
+    text-align: center;
+    padding: 70px 0 0px;
+    color: #f3fcff;
+    letter-spacing: 5px;
+}
+
+
+/* grid */
+.grid {
+	overflow: hidden;
+	margin: 0;
+	padding: 1em 0em 4em;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+
+/* common style */
+.grid figure {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+    margin: 10px 30px 0 0;
+	width: 23%;
+	height: 300px;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+/* grid figure images */
+.grid figure img {
+	position: relative;
+	display: block;
+	height: 100%;
+    width: 100%;
+	opacity: 0.8;
+}
+
+/* grid figure figcaption */
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* after before */
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	font-size: 100%;
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+.view-more-btn{
+	width: 150px!important;
+	margin-right: 0!important;
+	background: none!important;
+	
+}
+/* view more button */
+.view-more{
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    background-color: #0066b2;
+    color: #f3fcff;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 0px 10px #054c83;
+    /* position:absolute; */
+    /* margin-top: 100px; */
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+/* view more button hover */
+.view-more:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 0px 10px #054c83;
+    color: #0066b2;
+    background-color: #f3fcff;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/* effect */
+figure.effect-oscar {
+	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+}
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+	padding: 3em;
+	background-color: rgba(58,52,42,0.7);
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+}
+
+figure.effect-oscar h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0.4;
+}
+
+
+
+/* media queries*/
+@media screen and (max-width: 69.5em) {
+    .grid figure {
+      width: 40%;
+    }
+    .grid figure figcaption {
+      font-size: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 41.5em) {
+    .services{
+        margin: 0 15px;
+    }
+	.grid{
+		padding-bottom: 0;
+	}
+    .grid figure {
+      width: 100%;
+      margin: 10px 0;
+    }
+	.view-more-btn{
+		height: 150px!important;
+	}
+    .view-more{
+        position: relative;
+        margin: 10px;
+        padding: 15px;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+    }
+  }
+
+
+  /* feedback section */
+.feedback{
+	background: #d1eff8;
+	border-radius: 15px;
+	height: auto;
+	margin: 50px 50px 0;
+	
+}
+
+/* feedback container */
+.container{
+	padding: 70px 0 160px;
+}
+
+/* feedback heading */
+.fedback-heading{
+	width: 553px;
+	height: 100px;
+	background-color: #0066B2;
+	color: #FFFFFF;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+/* heading hover */
+.fedback-heading:hover{
+	background-color: #f3fcff;
+	color: #0066B2;
+}
+
+/* change color of svg on hover */
+.fedback-heading:hover .feedback-svg path{
+	fill: #0066B2;
+}
+
+/* feedback heading text */
+.fedback-heading p{
+	font-size: 20px;
+	text-align: center;
+}
+
+/* feedback heading image */
+.fedback-heading svg{
+	height: 40px;
+	width: 40px;
+	margin-left: 50px;
+}
+
+/* feedback row1 */
+.row{
+	padding: 70px 50px 0;
+	display: flex;
+	position: relative;
+}
+
+.review{
+	background-color: #e4f3f3;
+	width: 33.33%;
+	padding: 18px;
+	margin: 0 40px;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #bfe0eb;
+	position: relative;
+}
+.review p{
+	margin: 0 0 8px;
+}
+
+
+/*feedback star rating*/
+
+.fill-star{
+	color: #0066b2;
+}
+
+.blank-star{
+	color: #72acd3;
+}
+
+.half-fill{
+	color: #0066b2;
+}
+
+/* show full review on hover */
+.review{
+	position: relative;
+	display: inline-block;
+}
+.review:hover{
+	cursor: pointer;	
+}
+
+.review .details{
+	visibility: hidden;
+	width: 100%;
+	left: 50%;
+  	margin-left: -148px;
+	margin-top: -50px;
+	background-color: #f3fcff;
+	position: absolute;
+	border-radius: 15px;
+	z-index: 1;
+}
+
+.review:hover .details{
+	visibility: visible;
+	transition-delay: .32s;
+}
+
+.review:hover .short{
+	visibility: hidden;
+	transition-delay: .32s;
+}
+
+.details p{
+	font-size: 12px;
+	padding-bottom: 10px;
+	text-align: left;
+	padding-left: 45px;
+	margin: 0 0 10px;
+}
+
+.details h4{
+	text-align: left;
+	padding-left: 45px;
+}
+
+.details .star-rating{
+	text-align: left;
+	padding: 0px 0 26px;
+	margin-left: 45px;
+}
+
+
+
+
+
+ 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generalphysician</title>
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/27d995b4ee.js" crossorigin="anonymous"></script>
+    <!--roboto font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--quicksand font-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!--main css-->
+    <link rel="stylesheet" href="/service-details.css">
+</head>
+<body>
+    <div class="container-outer"> <!--outer container start-->
+        <div class="container-inner"> <!--inner container start-->
+            <div class="heading"> <!--heading start-->
+                <div class="back-button">
+                    <button id="go-back" onchange="goBack()">
+                        <svg width="25" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 8.33333H6.38333L12.35 2.35L10 0L0 10L10 20L12.35 17.65L6.38333 11.6667H30V8.33333Z" fill="#0066B2"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="heading-details">
+                    <img src="/images/dermatologist.jpg" alt="">
+                    <div class="heading-text">
+                        <h3>
+                            <b>Generalphysician</b>
+                        </h3>
+                        <p>
+                            A Doctor who is expert in the field of human oral cavity. If you have an ailment or problem in your mouth, teeth, gums and related areas you go to a dentist. It is advised to visit a dentist once in a month for the proper care of your oral cavity. Find the best Dentist in your area.
+                        </p>
+                    </div>
+                </div>
+                
+            </div> <!--heading end-->
+            <div class="hading2">
+                <h2>
+                    Hospitals/Cinics Providing Service : Dentist
+                </h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search branch here">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div> <!--inner container end-->
+    </div> <!--outer contrainer end-->
+
+
+    <!-- go back buton js -->
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    </script>
+</body>
+</html>
